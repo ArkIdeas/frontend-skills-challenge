@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600);
+
+html, body, div, p, td, a, h1, h2, h3, h4, h5 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+$aop-dark-grey: #3a4149;
+$aop-light-grey: #676f7a;
+$aop-taupe: #edeae3;
+$aop-light-taupe: #f8f7f3;
+$aop-red: #b7153a;
+
+html, body {
+	background-color: $aop-taupe;
+}
+
+
+.aop-red {
+	color: $aop-red;
+}
+
+.aop-dark-grey-bg {
+	background-color: $aop-dark-grey;
+	color: #fff;
+}
+
+.aop-light-grey-bg {
+	background-color: $aop-light-grey;
+	color: #fff;
+}
+
+.btn-default {
+	@extend .aop-light-grey-bg;
+	border-color: $aop-light-grey;
+}
+
+.btn-primary {
+	background-color: #fff;
+	color: $aop-red;
+	border-color: #fff;
+	font-weight: bold;
+}
+
+.btn-primary:hover {
+	background-color: $aop-red;
+	border-color: $aop-red;
+	color: fff;
+}
+
+.aop-taupe-bg {
+	background-color: $aop-taupe;
+}
+
+#top-bar {
+	padding: 35px 0;
+	@extend .aop-dark-grey-bg;
+}
+
+#main-nav .nav-tabs {
+	border-bottom: 0;
+}
+
+#main-nav .nav-tabs>li>a {
+	margin-top: -6px;
+	padding-top: 16px;
+}
+
+#main-nav .nav-tabs>li>a {
+	color: #fff;
+}
+
+#main-nav .nav-tabs>li.active>a, #main-nav .nav-tabs>li.active>a:focus, #main-nav .nav-tabs>li.active>a:hover {
+	@extend .aop-taupe-bg;
+	color: $aop-red;
+}
+
+
+#main-nav .nav>li>a:focus, #main-nav .nav>li>a:hover {
+    background-color: $aop-taupe;
+	color: $aop-red;
+	border-bottom-color: $aop-taupe;
+}
+
+#main-content>.container {
+	padding-top: 35p;
+	min-height: 400px;
+}
+
+#sub-nav .navbar-nav>li>a {
+	color: $aop-dark-grey;
+}
+
+#sub-nav .navbar-nav > li.active > a {
+	color: $aop-red;
+}
+
+.navbar .divider-vertical {	
+    height: 33px;
+    margin: 0 4px;
+	margin-top: 10px;
+    border-right: 1px solid #dddac9;
+}
+
+#sub-nav .nav>li>a:focus, #sub-nav .nav>li>a:hover {
+    background-color: $aop-taupe;
+	color: $aop-red;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse .nav > .divider-vertical {
+        display: none;
+     }
+}
+
+.aop-heading {
+	color: $aop-dark-grey;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.aop-panel {
+	border-radius: 0;
+	border: 0;
+	-webkit-box-shadow: 0px 0px 25px 6px rgba(226,223,214,1);
+	-moz-box-shadow: 0px 0px 25px 6px rgba(226,223,214,1);
+	box-shadow: 0px 0px 25px 6px rgba(226,223,214,1);
+}
+
+.aop-panel-heading {
+	background-color: $aop-light-taupe;
+	color: $aop-red;
+	font-size: 20px;
+}
+
+.aop-panel-footer {
+	background-color: $aop-dark-grey;
+	border-radius: 0;
+	border: 0;
+}
+
+.aop-item-list {
+	overflow: auto;
+	height: 200px;
+	border: 1px solid $aop-dark-grey;
+	border-radius: 4px;
+}
+
+.aop-item-list li {
+	list-style-type: none;
+	display: block;
+	padding: 10px;
+}
+
+.aop-item-list li.odd {
+	background-color: $aop-light-taupe;
+}
+
+.aop-item-list ul {
+	margin-right: 0;
+	padding: 0;
+}
+
+.aop-divider {
+	height: 1px;
+	overflow: hidden;
+	border-bottom: 1px dashed #cdcdcd;
+}
+
+.aop-divider-solid {
+	border-bottom: 1px solid $aop-dark-grey;
+}
+
+.aop-dark-border {
+	border: 1px solid $aop-dark-grey;
+}
+
+.aop-register-row {
+	margin: 10px 0;
+}
+
+.aop-register-row {
+	.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.aop-register-total-row {
+	margin: 5px 0;
+}
+
+#register-items {
+	height: 200px;
+	overflow: auto;
+}
+
+.btn-link.aop-item-button {
+	color: $aop-dark-grey;
+	font-size: 12px;
+}
+
+.btn-link.aop-item-button:hover, .btn-link.aop-red:hover {
+	text-decoration: none;
+}
+
+.btn-link.aop-red:hover {
+	color: $aop-red;
+}
+
+.btn-link.aop-item-button:focus, .btn-link.aop-red:focus {
+	outline: none;
+}

@@ -1,0 +1,312 @@
+<html>
+<head>
+  <title>Always on POS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/pos.css">
+  <script src="https://use.fontawesome.com/b4a73a7b3c.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/b4a73a7b3c.css" media="all">
+<body>
+
+<div id="top-bar">
+  <div class="container container-fluid clearfix">
+    <div class="pull-left"><img src="img/logo.png" alt="Always on POS"></div>
+  </div>
+</div>
+<div id="main-nav" class="aop-light-grey-bg">
+  <div class="container container-fluid clearfix">
+    <ul class="nav nav-tabs aop-light-grey">
+      <li role="presentation"><a href="#">AOP</a></li>
+      <li role="presentation" class="active"><a href="#">Register</a></li>
+      <li role="presentation"><a href="#">Inventory</a></li>
+      <li role="presentation"><a href="#">Reports</a></li>
+    </ul>
+  </div>
+</div>
+<div id="sub-nav" class="aop-taupe-bg">
+  <div class="container container-fluid clearfix">
+    <ul class="nav navbar navbar-nav">
+      <li role="presentation" class="active"><a href="#">Sales</a></li>
+      <li class="divider-vertical"><div></div></li>
+      <li role="presentation"><a href="#">Retrieve Sale</a></li>
+      <li class="divider-vertical"><div></div></li>
+      <li role="presentation"><a href="#">Open/Close Register</a></li>
+      <li class="divider-vertical"><div></div></li>
+      <li role="presentation"><a href="#">Price List</a></li>
+    </ul>
+  </div>
+</div>
+<div id="main-content" class="aop-taupe-bg">
+  <div class="container container-fluid clearfix">
+<div class="panel aop-panel">
+  <div class="panel-heading aop-panel-heading">
+    <div class="pull-right"><a class="aop-red" href="#"><i aria-hidden="true" class="fa fa-trash"></i></a></div>
+    Register
+  </div>
+  <div class="panel-body aop-panel-body">    
+    <div class="row">
+        <div class="col-md-4">
+           
+<div class="aop-heading">Find a Product</div>
+<div class="input-group">  
+  <div class="input-group-btn">
+    <button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle aop-dark-border" data-toggle="dropdown" type="button">Name<span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-left">
+      <li><a href="#">Name</a></li>
+      <li><a href="#">SKU</a></li>
+      <li><a href="#">ESN</a></li>
+    </ul>
+  </div>
+  <input aria-label="..." class="form-control aop-dark-border" placeholder="Search" type="text">
+</div>
+
+<select class="form-control aop-dark-border" style="margin: 10px 0" value="">
+    <option value="" ng-reflect-value="">All Products</option>
+    <option value="Boost Topup">Boost Topup</option>
+	<option value="SPG Plans">SPG Plans</option>
+	<option value="payLo Plans">payLo Plans</option>
+	<option value="Virgin Plans">Virgin Plans</option>
+	<option value="Cases">Cases</option>
+	<option value="Screen Protectors">Screen Protectors</option>
+	<option value="Boost Phones">Boost Phones</option>
+	<option value="Misc. Accessory">Misc. Accessory</option>
+	<option value="Plan Add Ons">Plan Add Ons</option>
+	<option value="John Test">John Test</option>
+	<option value="Miscellaneous Top Up">Miscellaneous Top Up</option>
+</select>
+
+<div class="aop-item-list">
+    <ul>
+        <li class="even">
+            <button class="btn btn-link aop-item-button">(B) Boost RTR</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">(B) $100 Family Plan Primary</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">(B) $3 Android Daily Unlimited Plan</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">(B) $35 Monthly Unlimited Plan</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">(B) $45 Monthly Unimited Plan</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">(B) $55 Monthly Unlimited Plan</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">(B) Pay As You Go Plan</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">(P) $20 Plan</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">(P) $30 Plan</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">(P) $40 Plan</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">(V) $20 300 Minutes Plan</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">(V) $35 Monthly Unlimited Plan</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">(V) $45 Monthly Umlimited Plan</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">(V) $55 Monthly Unlimited Plan</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Boost Force Intact Case, Aqua Blue &amp; Teal</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Boost Force Intact Case, Black &amp; Black</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">HTC Desire 510 Intact Case, Black &amp; Black</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">HTC Desire 510 Intact Case, Pink &amp; White</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">HTC Desire 510 Intact Case, Violet &amp; Light Blue</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">HTC Desire 510 Intact Case, White &amp; Grey</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">(B) $35 Monthly w/ Auto Pay</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Motorola Moto E Screen Protector</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Natalie Test</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Samsung Nexus S</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Motorola Moto E Screen Protector</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Test Inventory Value</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Test inventory Transaction 2</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Aaron Test - version</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Natalie Testing Non Inventory</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Aaron IT testing</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Test Aaron3 - version 1</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Kyocera Hydro</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Kyocera Hydro Edge</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button"> Apple iPhone 5C Intact Case, Black &amp; Black</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Apple iPhone 5C Intact Case, Light Blue &amp; Blue</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Apple iPhone 5C Intact Case, Light Green &amp; Green</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Apple iPhone 5C Intact Case, Pink &amp; Strong Pink</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Apple iPhone 5C Intact Case, White &amp; Grey</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Apple iPhone 4/4s Intact Case, Hot Pink &amp; White</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Apple iPhone 4/4s Intact Case, Lava Orange &amp; Grey</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Apple iPhone 4/4s Intact Case, Lime &amp; Dark Blue</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Boost Moto G </button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">HTC One SV Intact Case, Aqua Blue &amp; Teal</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Kyocera Hydro Edge Intact Case, Black &amp; Black</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Kyocera Hydro Icon Intact Case, Pink &amp; White</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">LG F3 Intact Case, Pink &amp; White</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">(B) Pay As You Go Plan Cheaper</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">Apple iPhone 4/4s Intact Case, Aqua Blue &amp; Teal</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">$5 airG VIP</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">$5 Intl Conn Can/ALL of Mex</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">$10 IC Plus 1K MX Mbl/DR Land</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">$10/PlayPhone Gaming Option</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">Apple iPhone 4/4s Intact Case, Blue &amp; Gray</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">LG G2 Titanium</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">LG G2 White</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">payLo RTR</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">99 out of your mind</button>
+        </li><li class="odd">
+            <button class="btn btn-link aop-item-button">1.03 Thats for me</button>
+        </li><li class="even">
+            <button class="btn btn-link aop-item-button">$3 Convenience Fee</button>
+        </li>
+    </ul>
+</div>
+        </div>
+        <div class="col-md-8">            
+<div class="aop-heading">Shopping Cart</div>
+<div class="aop-divider"></div>
+<div id="register-items">
+    <div>
+        <div class="row aop-register-row">
+            <div class="col-md-1"><input class="form-control input-sm text-right" placeholder="Qty" type="text" value="1"></div>
+            <div class="col-md-8"><a class="btn btn-link aop-red" href="#">(B) $35 Monthly Unlimited Plan</a></div>
+            <div class="col-md-2 text-right">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon" id="sizing-addon3">$</span>
+                    <input aria-describedby="sizing-addon3" class="form-control input-sm text-right" type="text" value="35">
+                </div>            
+            </div>
+            <div class="col-md-1"><button class="btn btn-link aop-red"><i aria-hidden="true" class="fa fa-times"></i></button> </div>        
+        </div>
+        <div class="aop-divider"></div>
+    </div><div>
+        <div class="row aop-register-row">
+            <div class="col-md-1"><input class="form-control input-sm text-right" placeholder="Qty" type="text" value="1"></div>
+            <div class="col-md-8"><a class="btn btn-link aop-red" href="#">(B) $55 Monthly Unlimited Plan</a></div>
+            <div class="col-md-2 text-right">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon" id="sizing-addon3">$</span>
+                    <input aria-describedby="sizing-addon3" class="form-control input-sm text-right" type="text" value="60">
+                </div>            
+            </div>
+            <div class="col-md-1"><button class="btn btn-link aop-red"><i aria-hidden="true" class="fa fa-times"></i></button> </div>        
+        </div>
+        <div class="aop-divider"></div>
+    </div><div>
+        <div class="row aop-register-row">
+            <div class="col-md-1"><input class="form-control input-sm text-right" placeholder="Qty" type="text" value="1"></div>
+            <div class="col-md-8"><a class="btn btn-link aop-red" href="#">HTC Desire 510 Intact Case, Pink &amp; White</a></div>
+            <div class="col-md-2 text-right">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon" id="sizing-addon3">$</span>
+                    <input aria-describedby="sizing-addon3" class="form-control input-sm text-right" type="text" value="29.95">
+                </div>            
+            </div>
+            <div class="col-md-1"><button class="btn btn-link aop-red"><i aria-hidden="true" class="fa fa-times"></i></button> </div>        
+        </div>
+        <div class="aop-divider"></div>
+    </div>
+</div>
+            <div class="aop-divider"></div>
+            <div class="aop-taupe-bg" style="margin-top: 10px; padding: 10px;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="aop-heading-sm">Tax Rate</div>
+                        <select class="form-control aop-dark-border" style="margin: 10px 0">                            
+                            <option value=""  >Sales Tax</option>
+							<option value="5% Sales Tax">5% Sales Tax</option>
+							<option value="10% Sales Tax" selected="selected">10% Sales Tax</option>
+							<option value="15% Sales Tax">15% Sales Tax</option>
+							<option value="20% Sales Tax">20% Sales Tax</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="aop-heading-sm">Discount Code</div>
+                        <select class="form-control aop-dark-border" style="margin: 10px 0">                                                        
+							<option value="">Discount</option>
+							<option value="5% Discount">5% Discount</option>
+							<option value="$5 Discountt">$5 Discount</option>
+							<option value="10% Discount">10% Discount</option>
+							<option value="$10 Discount">$10 Discount</option>
+							<option value="25% Discount" selected="selected">25% Discount</option>
+							<option value="$25 Discount">$25 Discount</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row aop-register-total-row">
+                            <div class="col-md-6 aop-register-label">Sub Total:</div>
+                            <div class="col-md-6 text-right">$124.95</div>
+                        </div>
+                        <div class="row aop-register-total-row">
+                            <div class="col-md-6 aop-register-label">Discount:</div>
+                            <div class="col-md-6 text-right">-$25.00</div>
+                        </div>
+                        <div class="row aop-register-total-row">
+                            <div class="col-md-6 aop-register-label">Tax:</div>
+                            <div class="col-md-6 text-right">$12.50</div>
+                        </div>
+                        <div class="row aop-register-total-row">
+                            <div class="col-md-12"><div class="aop-divider-solid"></div></div>
+                        </div>
+                        <div class="row aop-register-total-row">
+                            <div class="col-md-6 aop-register-label"><strong>Total:</strong></div>
+                            <div class="col-md-6 text-right"><strong>$112.45</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="panel-footer aop-panel-footer">
+    <div class="text-right">
+        <button class="btn btn-sm btn-default">Save</button>
+        <button class="btn btn-sm btn-primary">Pay Now</button>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+</body></html>
