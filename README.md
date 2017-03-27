@@ -1,6 +1,6 @@
-## Ark Ideas - Front End Coding Skills 
+## Ark Ideas - Front End Coding Skills Challenge
 
-The Ark Ideas front end coding challenge is designed to allow us to evalueate your front-end coding skill level, as well as your overall approach to the project.
+The Ark Ideas front end coding challenge is designed to allow us to evaluate your front-end coding skill level, as well as your overall approach to the project.
  
 A successful completion of the challenge will incorporate all of the functionality outlined below.
   
